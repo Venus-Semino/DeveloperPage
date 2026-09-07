@@ -1,14 +1,23 @@
-<!DOCTYPE html> // formato del archivo HTML
-<html lang="es"> // idioma que se está utilizando en el documento
-<head> // sección de metadatos del documento
-    <meta charset="UTF-8"> // conjunto de caracteres utilizado en el documento, (nuestros símbolos y caracteres de nuestro idioma)
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Normalize -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Estilo personalizado -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel ="stylesheet" href="css/styles.css">
+
     <title>DEVELOPER PAGE</title>
 </head>
 
 <body>
     <header>
-        <h1> Venus Semino</h1>
+        <h1 class="my-title"> Venus Semino <span> Developer </span> </h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -47,6 +56,31 @@
 
     <section>
         <h2>Contacto</h2>
+        <form>
+            <fieldset>
+                <legend> Lena tus datos de contacto </legend>
+                <div>
+                    <label>Nombre completo</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label>Telefon</label>
+                    <input type="tel" placeholder="Tu teléfono">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Tu correo electrónico">
+                </div>
+                <div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+
+        </form>
     </section>
     <footer>
         <p>Todos los derechos reservaods ©. Venus Semino</p>
