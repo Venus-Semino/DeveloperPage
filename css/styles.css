@@ -1,5 +1,12 @@
 /*Truco para uniformidad en textos entre navegadores*/
 
+:root{
+    --blanco: #fff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #26939f;
+    --gris: #757575;
+}
 html{
     font-size: 62.5%;
 }
@@ -13,4 +20,32 @@ body{
 }
 .my-title span{
     font-size: 2rem;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold; 
+    font-size: 2rem;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
 }
